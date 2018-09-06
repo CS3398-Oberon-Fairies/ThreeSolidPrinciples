@@ -1,0 +1,35 @@
+
+2) Explanation of 3 principles:
+
+- IFeedable.java & IWorker.java : Separated the Feedable interface and the Worker
+    interface into their own files so they both have a Single responsibility and
+    are separated from the implementation. They also follow the Interface 
+    Segregation Principle by being separate, so we are not forced to implement 
+    the 'eat' function for the Robot class.
+- Manager.java : The manager class follows the Single responsibility because it 
+    will only be changed when updates to the manager class are needed. 
+- Worker.java : Worker class follows the Single responsibility principle because
+    it it will only be changed when updates to the Worker class are needed. 
+- SuperWorker.java : Extends Worker.java in order to follow the Open Closed 
+    Principle, it will do everything the worker class does but can have 
+    functionality added to it.
+- Robot.java : Separated into it's own file to follow the Single Responsibility 
+    principle, the only time we need to touch the code for the robot is when we 
+    need to change the robot.
+
+ 3) Qualitative assessment:
+ 
+ Overall, our team is satisfied with our solutions and how we the separated the 
+ original ThreeSolidMain.java file. Each class and interface was placed in a 
+ separate file as to follow the Open Close Principle and the Single 
+ Responsibility Principle(SRP). Separating the worker classes allows them to be 
+ opened for extension and closed for modification unless mandatory updates are 
+ needed. In addition, the Interface Segregation Principle (ISP) was used 
+ appropriately to separate the original IWorker interface into a new IWorker 
+ interface, which only has a work() function and a IFeedable interface, which 
+ only has an eat() function.  Using the ISP in this way allowed us to add a 
+ Robot class and implement the IWorker interface without needing the eat() 
+ function. However, while the Manager class does follow the SRP, it may be 
+ difficult to extend from it in a more complex context due to its awkward 
+ structure.
+    
