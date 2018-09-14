@@ -1,5 +1,7 @@
+package threesolid
 
-public class BaseWorker {
+
+public class BaseWorker implements IWorker {
 	
 	public void work() {
 		// ....working
