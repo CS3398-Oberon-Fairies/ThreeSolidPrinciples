@@ -1,4 +1,6 @@
 
+package threesolid;
+
 public class Manager {
 	Worker worker = new Worker();
 

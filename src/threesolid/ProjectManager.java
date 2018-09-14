@@ -1,4 +1,6 @@
 
+package threesolid;
+
 public class ProjectManager extends Manager{
 
 	public void setWorker(Worker w) {

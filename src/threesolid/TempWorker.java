@@ -1,4 +1,6 @@
 
+package threesolid;
+
 public class TempWorker extends BaseWorker implements IEat, ISick {
 	
 	public void work() {

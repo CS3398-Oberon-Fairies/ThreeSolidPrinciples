@@ -1,4 +1,6 @@
 
+package threesolid;
+
 public class ProductManager extends Manager{
 
 	public void setWorker(Worker w) {

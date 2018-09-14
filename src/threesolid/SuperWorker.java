@@ -1,4 +1,6 @@
 
+package threesolid;
+
 public class SuperWorker extends BaseWorker implements IEat, ISick {
 
 	public void work() {
