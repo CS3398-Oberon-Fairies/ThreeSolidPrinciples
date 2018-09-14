@@ -5,10 +5,10 @@ public class Worker extends BaseWorker implements IEat, ISick {
 		//.... eating in launch break
 		System.out.println("Eating a sandwich...");
 	}
-	
+
 	public void sick() {
 		//.... employee won't show to work beacause of sickness
 		System.out.println("Missing work");
 	}
-	
+
 }
