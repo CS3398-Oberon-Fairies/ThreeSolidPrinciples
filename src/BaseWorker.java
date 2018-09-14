@@ -1,3 +1,5 @@
+package threesolid
+
 
 public class BaseWorker implements IWorker {
 	
