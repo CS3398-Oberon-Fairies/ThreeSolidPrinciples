@@ -5,5 +5,5 @@ public class Robot implements IWorker {
 		// ....working
 		System.out.println("Work.exe");
 	}
-	
+
 }

@@ -1,21 +1,17 @@
-public class ProjectManager extends Manager{
 
-	Worker worker;
-
-	public void ProjectManager() {
-
-	}
+public class ProductManager extends Manager{
 
 	public void setWorker(Worker w) {
 		super.setWorker(w);
 	}
 
 	public void manage() {
+		//...managing as ProductManager
+		System.out.println("Work on that product pleb!");
     super.manage();
-		worker.work();
 	}
-  public void defineproduct()
-  {
+
+  public void defineproduct() {
     // ....defining product
     System.out.println("Defining product substantially...");
   }

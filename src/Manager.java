@@ -1,11 +1,7 @@
 
 public class Manager {
+	Worker worker = new Worker();
 
-	Worker worker;
-
-	public void Manager() {
-
-	}
 
 	public void setWorker(Worker w) {
 		worker=w;
@@ -14,5 +10,6 @@ public class Manager {
 	public void manage() {
 		worker.work();
 	}
+
 
 }
