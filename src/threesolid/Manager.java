@@ -2,10 +2,14 @@
 package threesolid;
 
 public class Manager {
-	Worker worker = new Worker();
 
+	private IWorker worker;
 
-	public void setWorker(Worker w) {
+	public Manager(){
+		System.out.println("Just a basic manager...");
+	}
+
+	public void setWorker(IWorker w) {
 		worker=w;
 	}
 
