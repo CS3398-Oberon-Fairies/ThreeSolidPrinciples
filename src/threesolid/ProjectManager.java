@@ -18,7 +18,7 @@ public class ProjectManager extends Manager{
 
 	public void addWorker(IWorker w){
 		all_workers.add(w);
-	}
+	} 
 
 	public void manage() {
 		//...managing as a ProjectManager
