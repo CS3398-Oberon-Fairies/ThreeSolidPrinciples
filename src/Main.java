@@ -5,6 +5,7 @@ public class Main {
 
 		System.out.println("Starting...");
 
+		BaseWorker bw = new BaseWorker();
 		Worker w = new Worker();
 		SuperWorker sw = new SuperWorker();
 		Manager m = new Manager();
@@ -12,6 +13,7 @@ public class Main {
 		ProjectManager pjm = new ProjectManager();
 		Robot r = new Robot();
 
+		bw.work();
 		w.eat();
 		sw.eat();
 		w.work();
