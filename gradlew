@@ -2,14 +2,14 @@
 
 ##############################################################################
 ##
-##  ThreeSolidMain start up script for UN*X
+##  Gradle start up script for UN*X
 ##
 ##############################################################################
 
-# Add default JVM options here. You can also use JAVA_OPTS and THREE_SOLID_MAIN_OPTS to pass JVM options to this script.
+# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS=""
 
-APP_NAME="ThreeSolidMain"
+APP_NAME="Gradle"
 APP_BASE_NAME=`basename "$0"`
 
 # Use the maximum available, or set MAX_FD != -1 to use that value.
@@ -56,11 +56,11 @@ while [ -h "$PRG" ] ; do
     fi
 done
 SAVED="`pwd`"
-cd "`dirname \"$PRG\"`/.." >/dev/null
+cd "`dirname \"$PRG\"`/" >/dev/null
 APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
 
-CLASSPATH=$APP_HOME/lib/dl-three-solid-main-0.1.0.jar:$APP_HOME/lib/joda-time-2.2.jar:$APP_HOME/lib/junit-jupiter-api-5.3.0-M1.jar:$APP_HOME/lib/apiguardian-api-1.0.0.jar:$APP_HOME/lib/opentest4j-1.1.0.jar:$APP_HOME/lib/junit-platform-commons-1.3.0-M1.jar
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
@@ -150,11 +150,11 @@ if $cygwin ; then
     esac
 fi
 
-# Split up the JVM_OPTS And THREE_SOLID_MAIN_OPTS values into an array, following the shell quoting and substitution rules
+# Split up the JVM_OPTS And GRADLE_OPTS values into an array, following the shell quoting and substitution rules
 function splitJvmOpts() {
     JVM_OPTS=("$@")
 }
-eval splitJvmOpts $DEFAULT_JVM_OPTS $JAVA_OPTS $THREE_SOLID_MAIN_OPTS
+eval splitJvmOpts $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS
+JVM_OPTS[${#JVM_OPTS[*]}]="-Dorg.gradle.appname=$APP_BASE_NAME"
 
-
-exec "$JAVACMD" "${JVM_OPTS[@]}" -classpath "$CLASSPATH" threesolid.ThreeSolidMain "$@"
+exec "$JAVACMD" "${JVM_OPTS[@]}" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"

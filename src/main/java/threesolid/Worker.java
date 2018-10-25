@@ -13,8 +13,8 @@ public class Worker extends BaseWorker implements IEat, ISick {
 		System.out.println("Missing work");
 	}
 
-    public int something(){
-        return 1;
+    public void work(){
+        System.out.println("I'm working already!");
     }
 
 }
