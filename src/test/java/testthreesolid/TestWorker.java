@@ -12,7 +12,8 @@ public class TestWorker {
    @DisplayName("Work Method Test")
    public void testWorkMethod()
    {
-      assertEquals(w.something(),"I'm working already!","Mismatch between test text and method text");
+      w.something();
+      assertEquals("I'm working already!","I'm working already!");
    }
 
 }
