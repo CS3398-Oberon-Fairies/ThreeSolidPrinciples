@@ -12,8 +12,17 @@ public class TestWorker {
    @DisplayName("Work Method Test")
    public void testWorkMethod()
    {
-      w.something();
-      assertEquals("I'm working already!","I'm working already!");
+        assertTrue(true);
+      //assertEquals(w.something(), "I'm working already!","I'm working already!");
    }
+
+   @Test
+   @DisplayName("Failing Test")
+   public void fail()
+   {
+        assertTrue(false);
+      //assertEquals(w.something(), "I'm working already!","I'm working already!");
+   }
+
 
 }
