@@ -6,23 +6,29 @@ import org.junit.jupiter.api.Test;
 
 public class TestWorker {
 
+   ProjectManager project_manager = new ProjectManager();
    private Worker w = new Worker();
+   private int test = 1;
 
    @Test
    @DisplayName("Work Method Test")
    public void testWorkMethod()
    {
-        assertTrue(true);
-      //assertEquals(w.something(), "I'm working already!","I'm working already!");
+      assertNotNull(w);
    }
-
+   
    @Test
-   @DisplayName("Failing Test")
-   public void fail()
+   @DisplayName("A-Tyler Passing Test")
+   public void newtestAMTTestPass()
    {
-        assertTrue(false);
-      //assertEquals(w.something(), "I'm working already!","I'm working already!");
+        assertEquals(w.something(), test);
    }
-
+     
+   @Test
+   @DisplayName("A-Tyler Failing Test")
+   public void newtestAMTTestFail()
+   {
+        assertNull(project_manager);
+   }
 
 }
