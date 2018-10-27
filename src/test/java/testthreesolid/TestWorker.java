@@ -10,14 +10,14 @@ public class TestWorker {
 
    @Test
    @DisplayName("Work Method Test")
-   public void testWorkMethod()
+   public void newtestPGWorkerPass()
    {
       assertEquals("I'm working already!","I'm working already!");
    }
 
    @Test
    @DisplayName("Failing Test")
-   public void fail()
+   public void newtestPGWorkerFail()
    {
       assertEquals("I'm working already!","This is not what we are comparing to!");
    }
