@@ -13,9 +13,10 @@ public class SuperWorker extends BaseWorker implements IEat, ISick {
 		System.out.println("Eating while having everybody else get back to work.");
 	}
 
-	public void sick() {
+	public String sick() {
 		//.... worker won't show to work beacause of sickness
 		System.out.println("Paid vacation");
+		return("Paid vacation");
 	}
 
 }
