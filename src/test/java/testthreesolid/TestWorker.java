@@ -16,7 +16,7 @@ public class TestWorker {
       System.out.println("ahhh");
    }
    
-   @Test
+   //@Test
    @DisplayName("sick method false")
    public void testWorkMethod2()
    {
