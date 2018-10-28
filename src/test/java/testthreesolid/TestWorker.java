@@ -9,18 +9,18 @@ public class TestWorker {
    private Worker w = new Worker();
 
    @Test
-   @DisplayName("sick method true")
+   @DisplayName("Correct_sick")
    public void testWorkMethod()
    {
-      assertTrue(w.sick() == "Missing work");
-      System.out.println("ahhh");
+        assertTrue(w.sick2() == "Missing work");
    }
-   
-   //@Test
-   @DisplayName("sick method false")
-   public void testWorkMethod2()
+
+   @Test
+   @DisplayName("wrong_sick")
+   public void fail()
    {
-      assertTrue(w.sick() == "Hire doppelganger to fill in");
+        assertTrue(w.sick2() == "Hiring a doppelganger");
    }
+
 
 }

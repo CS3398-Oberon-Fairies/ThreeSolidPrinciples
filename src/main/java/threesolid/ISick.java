@@ -2,5 +2,5 @@
 package threesolid;
 
 public interface ISick {
-	String sick();
+	void sick();
 }

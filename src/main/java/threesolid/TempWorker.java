@@ -13,10 +13,9 @@ public class TempWorker extends BaseWorker implements IEat, ISick {
 		System.out.println("As a temp I always have time to eat.");
 	}
 	
-	public String sick() {
+	public void sick() {
 		//.... worker won't show to work beacause of sickness
 		System.out.println("It's totally cool, man. I'm not feeling too good.");
-		return("It's totally cool, man. I'm not feeling too good.");
 	}
 
 }

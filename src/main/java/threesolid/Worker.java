@@ -8,11 +8,19 @@ public class Worker extends BaseWorker implements IEat, ISick {
 		System.out.println("Eating a sandwich...");
 	}
 
-	public String sick() {
+	public void sick() {
+		//.... employee won't show to work beacause of sickness
+		System.out.println("Missing work");
+	}
+	public String sick2(){
 		//.... employee won't show to work beacause of sickness
 		System.out.println("Missing work");
 		return("Missing work");
 	}
+
+    public void work(){
+        System.out.println("I'm working already!");
+    }
 
     public int something(){
         return 1;
