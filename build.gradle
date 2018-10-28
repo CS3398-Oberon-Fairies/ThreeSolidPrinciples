@@ -103,7 +103,7 @@ test {
 // end::dependencies[]
 
 // tag::wrapper[]
-task wrapper(type: Wrapper) {
+wrapper{
     gradleVersion = '4.6'
 }
 // end::wrapper[]
