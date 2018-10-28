@@ -9,14 +9,14 @@ public class TestWorker {
    private Worker w = new Worker();
 
    @Test
-   @DisplayName("Correct_sick")
+   @DisplayName("newtest<GC>WorkerPass()")
    public void testWorkMethod()
    {
         assertTrue(w.sick2() == "Missing work");
    }
 
    @Test
-   @DisplayName("wrong_sick")
+   @DisplayName("newtest<GC>WorkerFail()")
    public void fail()
    {
         assertTrue(w.sick2() == "Hiring a doppelganger");
