@@ -7,22 +7,23 @@ import org.junit.jupiter.api.Test;
 public class TestWorker {
 
    private Worker w = new Worker();
+   private Worker w2 ;
+   int worker_pay = w.something();
 
    @Test
-   @DisplayName("Work Method Test")
-   public void testWorkMethod()
+   @DisplayName("Worker Method Pass")
+   public void newestRTPWorkerPass()
    {
-        assertTrue(true);
-      //assertEquals(w.something(), "I'm working already!","I'm working already!");
+        assertNull(w2);
+
    }
 
    @Test
-   @DisplayName("Failing Test")
-   public void fail()
+   @DisplayName("Worker Method Fail")
+   public void newestRTPWorkerFail()
    {
-        assertTrue(false);
-      //assertEquals(w.something(), "I'm working already!","I'm working already!");
-   }
+        assertEquals(worker_pay,1000);
 
+   }
 
 }
